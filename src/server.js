@@ -1,5 +1,5 @@
 require("dotenv").config();
-import  express from "express";
+import express from "express";
 import configViewEngine from "./config/viewEngine";
 import initWebRoutes from "./routes/web";
 import bodyParser from "body-parser";
@@ -20,9 +20,9 @@ initWebRoutes(app);
 //init cron job
 initCronJob();
 
-let port = process.env.PORT || 8080;
+let port = process.env.PORT || 9000;
 
-app.listen(port, ()=>{
+app.listen(port, () => {
    console.log(`App is running at the port ${port}`);
 });
 
